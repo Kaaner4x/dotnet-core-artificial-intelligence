@@ -1,0 +1,6 @@
+@DotnetCoreAI.Project01_ApiDemo_HostAddress = http://localhost:5172
+
+GET {{DotnetCoreAI.Project01_ApiDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
