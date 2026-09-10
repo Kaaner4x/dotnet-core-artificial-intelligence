@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="DotnetCoreAI.Project01_ApiDemo/DotnetCoreAI.Project01_ApiDemo.csproj" />
+  <Project Path="DotnetCoreAI.Project02_ApiConsumeUI/DotnetCoreAI.Project02_ApiConsumeUI.csproj" Id="c7d8595c-d782-4d25-a607-54c4259c9661" />
 </Solution>

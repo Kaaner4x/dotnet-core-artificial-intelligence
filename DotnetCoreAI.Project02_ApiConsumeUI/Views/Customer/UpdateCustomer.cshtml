@@ -1,0 +1,26 @@
+﻿@model DotnetCoreAI.Project02_ApiConsumeUI.Dtos.GetByIdCustomerDto
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<form method="post">
+    <div class="container">
+        <br /><br />
+        <input type="hidden" asp-for="customerId" />
+        <label>Customer Name</label>
+        <input type="text" asp-for="customerName" class="form-control" />
+        <br />
+        <label>Customer Surname</label>
+        <input type="text" asp-for="customerSurname" class="form-control" />
+        <br />
+        <label>Balance</label>
+        <input type="text" asp-for="customerBalance" class="form-control" />
+        <br />
+        <button class="btn btn-dark">Update Customer</button>
+    </div>
+</form>
+
