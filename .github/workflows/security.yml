@@ -1,0 +1,40 @@
+name: Security & Secret Leak Scan
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  secret-scan:
+    name: Secret & Credential Leak Scan
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Run TruffleHog Secret Scanner
+      uses: trufflesecurity/trufflehog@main
+      with:
+        extra_args: --only-verified
+
+  dependency-audit:
+    name: NuGet Dependency Vulnerability Check
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore Dependencies
+      run: dotnet restore
+
+    - name: Check for Known NuGet Vulnerabilities
+      run: dotnet list package --vulnerable --include-transitive
