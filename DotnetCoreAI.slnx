@@ -3,4 +3,5 @@
   <Project Path="DotnetCoreAI.Project02_ApiConsumeUI/DotnetCoreAI.Project02_ApiConsumeUI.csproj" Id="c7d8595c-d782-4d25-a607-54c4259c9661" />
   <Project Path="DotnetCoreAI.Project03_RapidApi/DotnetCoreAI.Project03_RapidApi.csproj" Id="194133a3-882c-404b-99e2-86e15b5718f6" />
   <Project Path="DotnetCoreAI.Project04_GoogleGeminiChat/DotnetCoreAI.Project04_GoogleGeminiChat.csproj" Id="5846c57c-772b-4a25-bf5a-46d999d52030" />
+  <Project Path="DotnetCoreAI.Project05_AudioTranscriptWithGoogleGemini/DotnetCoreAI.Project05_AudioTranscriptWithGoogleGemini.csproj" Id="ef6818a6-e213-4542-be12-a0b47eef78a4" />
 </Solution>
